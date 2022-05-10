@@ -2,7 +2,9 @@ import * as React from 'react';
 import Head from 'next/head';
 import Typography from '@mui/material/Typography';
 import AppBar from '@mui/material/AppBar';
-import { Toolbar } from '@mui/material';
+import { Container, Toolbar } from '@mui/material';
+import LoginIcon from '@mui/icons-material/Login';
+import HomeIcon from '@mui/icons-material/Home';
 
 
 export function Header() {
@@ -19,6 +21,8 @@ export function Header() {
         </Head>
         <AppBar position="relative" color = ""  >
           <Toolbar >
+            <HomeIcon fontSize='medium'/>
+            <Container>
             <Typography
               variant="h6"
               align="center"
@@ -30,6 +34,8 @@ export function Header() {
               sx={{ flexGrow: 14 }}
             > My Trip Web
             </Typography>
+            </Container>
+            <LoginIcon fontSize='medium'/>
             </Toolbar>
         </AppBar>
         </>
