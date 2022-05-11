@@ -2,7 +2,7 @@ import '../styles/globals.css'
 import { Nav, Header, Footer } from'@/components'
 import withReduxSaga from 'next-redux-saga'
 import PropTypes from 'prop-types'
-//import { wrapper } from '@/modules/store.js'
+import { wrapper } from '@/modules/store.js'
 
 const App = ({ Component }) => {
   return (<>
@@ -17,7 +17,4 @@ const App = ({ Component }) => {
 App.propTypes ={
   Component: PropTypes.elementType
 }
-
-//export default wrapper.withRedux(App)
-//export default wrapper.withRedux(withReduxSaga(App))
-export default App
+export default wrapper.withRedux(withReduxSaga(App))
