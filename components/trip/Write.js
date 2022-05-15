@@ -13,7 +13,6 @@ import {createTheme, ThemeProvider} from '@mui/material/styles';
 const theme = createTheme();
 
 export function Write({onChange, onSubmit}) {
-    
     return (
         <ThemeProvider theme={theme}>
             <Container component="main" maxWidth="xs">

@@ -52,3 +52,4 @@ const write = handleActions({
     })
 }, initialState)
 export default write
+//
